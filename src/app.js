@@ -109,15 +109,7 @@ function search(city) {
 function handleSubmit(event) {
   event.preventDefault();
   let cityInputElement = document.querySelector("#city-input");
-  let liveCamElement = document.querySelector("#city-liveCam");
-  if (
-    (cityInputElement.value =
-      Albania.length && Anguilla.length && Argentina.length)
-  ) {
-    liveCamElement +
-      `<video src="https://www.skylinewebcams.com/en/webcam/${cityInputElement.value}.html"></video>`;
-    search(cityInputElement.value);
-  }
+  search(cityInputElement.value);
 }
 
 function dislpayFahrenheitTemperature(event) {
